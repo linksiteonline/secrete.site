@@ -25,6 +25,64 @@
       }
     </style>
 
+    <!-- Popup Sair da Página -->
+<style>
+
+                .free-gift-button:hover{
+                    background-color: #ffc042 !important;
+                }
+                .free-gift-button:active{
+                    border-style:inset !important;
+                }
+                #exit_intent_box{
+                    margin-top:30px;
+                    display: none;
+                    max-width: 600px;
+                    border-radius: 20px;
+                    text-align: -webkit-center;
+                    padding: 10px;
+                    background: black;
+                }
+                .free-gift-button{
+                    cursor: pointer;
+                    padding: 10px;
+                    border: #ffa900;
+                    font-size: 2em;
+                    margin: 10px;
+                    background: #ffaf1d;
+                    user-select: none;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0, 0, 0, 0) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0, 0, 0, 0) -1px -2px;
+                }
+                .close_icon{
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    background: radial-gradient(#3b3b3b,#292929);
+                    color: white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 23px;
+                    border: 1px solid #393939;
+                    cursor: pointer;
+                }
+                .close_icon:hover{
+                    color:grey;
+                }
+            </style>
+<div id="exit_intent_box">
+<div class='close_icon exit_intent_box_closer'>×</div>
+<div>
+<div style='color: yellow; font-size: 2em;'><strong>ESPERE!</strong> <span style="color: white; border-bottom:5px solid black">NÃO SAIA DESSA PÁGINA AINDA!</span></div><div style='color: white; font-size: 1.5em;max-width: 400px;'>Esse vídeo pode ser retirado a qualquer momento!</div>
+<div class='free-gift-button exit_intent_box_closer' onclick="popit();">Vou continuar assistindo!</div>
+</div>
+</div>
+</div>
+
     <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -56,7 +114,7 @@
 
 
 <!-- Headline -->
-<h3 class="my-4"><b>ASSISTA  <span style="color: red;">ATÉ O FINAL</span> ANTES QUE ESSE VÍDEO SEJA RETIRADO DO AR!</b></h3>
+<h3 class="my-4"><b>ASSISTA <span style="color: red;">ATÉ O FINAL</span> PARA DESCOBRIR A <span style="border-bottom:2px solid white;">ROTINA MILENAR</span> QUE RESOLVE A DOR NO PESCOÇO</b></h3>
 
 <!-- VSL -->
 <script type="text/javascript" id="scr_626c745c97ddec000aa1a663">var s=document.createElement("script");s.src="https://scripts.converteai.net/9ee6dc61-1765-4549-af66-e53cde7c5435/players/626c745c97ddec000aa1a663/player.js",s.async=!0,document.head.appendChild(s);</script>
@@ -431,6 +489,18 @@ Estava com muitas dores e tensões, e eu sabia que era pela má postura. Comecei
 <script type="text/javascript">
       setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1281000); // temporização da Call to Action (em milissegundos)
     </script>
+
+<!-- Popup Sair da Página -->
+<script src="./assets/js/exit.js"></script>
+<script>exit_intent();</script>
+<script>
+                function popit(){
+                    $("#exitPage").show();
+                    $("#mainContent").hide();
+                    video01Player.pause();
+                }
+            </script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
