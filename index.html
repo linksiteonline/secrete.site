@@ -101,11 +101,29 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
+
+<!-- Parte Superior da Página -->
+<script type="text/javascript"> 
+ function getDate(days) {   
+ var dayNames = new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado");     
+ var monthNames = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");     
+ var now = new Date();    
+ now.setDate(now.getDate() + days);    
+ var nowString =  dayNames[now.getDay()] + "," + "  " + now.getDate() + " de " + monthNames[now.getMonth()] + " de " + now.getFullYear();    
+ document.write(nowString);  
+ } 
+</script>
+
 </head>
-<body>
 <body oncontextmenu="return false" onkeydown="return false">
-<div id="disclaimer-wrap"></div>
-<header class="py-4 bottom-space">
+<body>
+<div class="topbar" style="background-color:yellow;">
+<div class="container">
+<center><p class="topbartxt"><strong><span><u>ATENÇÃO</u>:</span> Você foi selecionado para ter acesso a essa apresentação. <strong style="color: red;">Devido a alta demanda de acessos, esta apresentação ficará disponível</strong>
+somente até <span><script type="text/javascript">getDate(0);</script>.</span></strong></p></center>
+</div>
+</div>    
+<header class="py-4">
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center">
