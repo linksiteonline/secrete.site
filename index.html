@@ -16,7 +16,7 @@
 <style type="text/css">
       header {
         color: white;
-        margin-top: -16px;
+        margin-top:20px;
         background-image: url("assets/img/bg.jpg");
         background-color: rgba(0, 0, 0, 0.6);
         background-position: center;
@@ -75,6 +75,20 @@
                     color:grey;
                 }
             </style>
+
+     <!-- Menu Fixo no Topo da Página -->
+ <style>
+                #menu-vertical{
+                    position:fixed;
+                    z-index:999;
+                    left:0%;
+                    right:0%;
+                    height:5%;
+                    top:0;
+                    background-color:yellow;
+                    }
+            </style>
+
 <div id="exit_intent_box">
 <div class='close_icon exit_intent_box_closer'>×</div>
 <div>
@@ -138,11 +152,9 @@ src="https://www.facebook.com/tr?id=1366712933812297&ev=PageView&noscript=1"
 </head>
 <body oncontextmenu="return false" onkeydown="return false">
 <body>
-<div class="topbar" style="background-color:yellow;">
-<div class="container">
+<div id="menu-vertical">
 <center><p class="topbartxt"><strong><span><u>ATENÇÃO</u>:</span> <strong style="color: red;">Devido a alta demanda de acessos, este vídeo ficará disponível</strong>
 somente até <span><script type="text/javascript">getDate(0);</script>.</span></strong></p></center>
-</div>
 </div>    
 <header class="py-4">
 <div class="container">
